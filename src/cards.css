@@ -78,9 +78,10 @@ html {
     
   }
 
-  @media (max-width: 360px) 
+  @media (max-width: 320px) 
   {
       div {
+
           background-color: #FAB746;
       }
       .cardGroup {
@@ -88,8 +89,12 @@ html {
           border: 1px solid #CAD0D2;
           border-radius: 4px;
           overflow: hidden;
-          display: flex;
+          display: inline-block;
           max-width: 320px;
+          margin-left:55px;
+          margin-right: 55px;
+          margin-top: 50px;
+
       
       }
       .card_price,
@@ -99,28 +104,16 @@ html {
           color: whitesmoke;
 
       }
-      
-  }
-  @media (max-width: 1024px) 
-  {
-      div {
-          background-color: #FAB746;
+      .card,
+      .card__description{
+          flex-direction: column;
+          
+        
       }
-      .cardGroup {
-          /* display */
-          border: 1px solid #CAD0D2;
-          border-radius: 4px;
-          overflow: hidden;
-          display: flex;
-          max-width: 320px;
-      
-      }
-      .card_price,
-      .card__descriptionText
-      {
-          font-size: 10px;
-          color: whitesmoke;
-
+      .cardGroup__cardDescription {
+        /* flex-grow, flex-shrink, flex-basis */
+        flex-shrink: 1;
+        
       }
       
   }
