@@ -53,6 +53,7 @@ html {
   overflow: hidden;
   display: flex;
   max-width: 710px;
+  margin-top: 400px;
   margin-left: auto;
   margin-right: auto;
 
@@ -78,11 +79,11 @@ html {
     
   }
 
-  @media (max-width: 320px) 
+  @media (max-width: 300px) 
   {
       div {
 
-          background-color: #FAB746;
+          background-color: #57727C;
       }
       .cardGroup {
           /* display */
@@ -91,9 +92,12 @@ html {
           overflow: hidden;
           display: inline-block;
           max-width: 320px;
-          margin-left:55px;
-          margin-right: 55px;
-          margin-top: 50px;
+          width: 280px;
+          height: 50%
+          margin-left:auto;
+          margin-right: auto;
+          margin-top: 300px;
+         
 
       
       }
